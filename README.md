@@ -1,4 +1,4 @@
-# rag-kit
+# ragkit
 
 A document ingestion and embedding pipeline for RAG (Retrieval-Augmented Generation) applications. Converts documents into chunked vector embeddings stored in a Chroma vectorstore, with support for multiple embedding providers and 16 file formats.
 
@@ -45,10 +45,10 @@ Loads documents from a directory, splits them into chunks, and saves the splits 
 
 ```bash
 # Split all supported file types in a directory
-python -m api.rag_kit_app --dir_path ./docs
+python -m api.ragkit_app --dir_path ./docs
 
 # Split specific file types with glob patterns
-python -m api.rag_kit_app \
+python -m api.ragkit_app \
   --dir_path ./src \
   --file_types java py \
   --file_patterns "java:**/*Service*" "py:**/*test*" \
